@@ -1,0 +1,14 @@
+name: minegit
+version: '1.0-SNAPSHOT'
+main: org.tetram26.minegit.Minegit
+api-version: '1.21'
+load: STARTUP
+authors: [ tetram26 ]
+description: A plugin that allows to pull remote change into the server
+libraries:
+  - org.eclipse.jgit:org.eclipse.jgit:7.4.0.202509020913-r
+commands:
+  git:
+    usage: "/git <pull> [force]"
+    permission: minegit.git
+    permission-message: "Vous n'avez pas la permission d'utiliser cette commande"
