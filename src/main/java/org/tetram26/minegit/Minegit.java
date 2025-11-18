@@ -39,7 +39,7 @@ public final class Minegit extends JavaPlugin {
             } catch (IOException | GitAPIException | URISyntaxException e) {
                 e.printStackTrace();
             }
-        }, 0L, 20L * 30);
+        }, 0L, 20L * getConfig().getInt("fetchtime"));
     }
 
     @Override
