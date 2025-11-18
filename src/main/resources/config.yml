@@ -3,5 +3,5 @@ password: "" # due to latest github politics in login, you should put a token
 
 repoURL: "" # the repo URL
 branch: "master"
-
+fetchtime: 400
 
